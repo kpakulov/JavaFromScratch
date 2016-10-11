@@ -1,3 +1,5 @@
+package ru.kpakulov.calculate;
+
 /**
 * Calculate - a Hello World program
 * @author Konstantin Pakulov
