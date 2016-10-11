@@ -1,4 +1,4 @@
-package ru.kpakulov.calculate;
+package ru.kpakulov.calculator;
 
 /**
 * Calculate - a Hello World program
