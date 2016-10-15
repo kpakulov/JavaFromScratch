@@ -28,7 +28,7 @@ package ru.kpakulov.calculator;
 	*/
         
 	public void substract(double first, double second) {
-                result = first - second;
+               this.result = first - second;
         }
 
 	/**
@@ -37,7 +37,7 @@ package ru.kpakulov.calculator;
 	 * @param second double
 	 */
         public void multiple(double first, double second) {
-                result = first * second;
+                this.result = first * second;
         }
 
 	/**
@@ -46,7 +46,7 @@ package ru.kpakulov.calculator;
 	 * @param second double
 	 */
 	public void div(double first, double second) {
-        	result = first / second;
+        	this.result = first / second;
 	}
 
 	/**
