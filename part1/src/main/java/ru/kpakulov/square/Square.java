@@ -4,7 +4,7 @@ package ru.kpakulov.quadratic;
  *  Class Square which calculates the quadratic equation y = a*x2 + b * x + c
  *
  *  @author Konstantin Pakulov
- *  @version 11/04/2016
+ *  @version 11/9/2016
  */
 public class Square {
     
@@ -30,7 +30,6 @@ public class Square {
         int xhigh = Integer.valueOf(args[1]);
         int step = Integer.valueOf(args[2]);
         
-    //    Square quadratic = new Square(a, b, c);
         for(int i = xlow; i <= xhigh; i = i + step){
             System.out.println(quadraEq(i));
         }

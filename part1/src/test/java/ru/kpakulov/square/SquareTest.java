@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
  * Testing Quadratic class
  *
  * @author Konstantin Pakulov
- * @version 11/7/2016
+ * @version 11/9/2016
  */
 
 
