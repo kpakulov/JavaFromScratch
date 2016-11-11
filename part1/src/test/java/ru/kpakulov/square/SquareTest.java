@@ -1,4 +1,4 @@
-package ru.kpakulov.quadratic;
+package ru.kpakulov.square;
 
 
 import org.apache.commons.io.output.ByteArrayOutputStream;

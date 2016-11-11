@@ -1,4 +1,4 @@
-package ru.kpakulov.quadratic;
+package ru.kpakulov.square;
 
 /**
  *  Class Square which calculates the quadratic equation y = a*x2 + b * x + c
