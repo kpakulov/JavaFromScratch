@@ -1,7 +1,7 @@
 package ru.kpakulov.factorial;
 
 /**
- * A tiny class Factorial calculating a factorial of a given digit.
+ * A tiny class Factorial calculating a factorial of a given digitnumber.
  * 
  * @author Konstantin Pakulov 
  * @version 11/4/2016
