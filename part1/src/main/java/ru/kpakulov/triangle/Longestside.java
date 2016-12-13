@@ -1,25 +1,27 @@
 package ru.kpakulov.triangle;
 
-// This class will find the longest side of a given triangle
+/**
+ * This class will find the longest side of a given triangle.
+ */
 
 public class Longestside {
 
 	/**
-	 * Return The length of the longest side of the triangle
-	 * @param A sample triangle
+	 * Return The length of the longest side of the triangle.
+	 * @param triangle a sample triangle
 	 * @return The length of the longest side
      */
 	public double max(Triangle triangle) {
 		double result = 0.0;
-		if(triangle.area() > 0.0) {
-			if(triangle.sideOne > triangle.sideTwo && triangle.sideOne > triangle.sideThree)
-				result = triangle.sideOne;
-			else if (triangle.sideTwo > triangle.sideOne && triangle.sideTwo > triangle.sideThree)
-				result = triangle.sideTwo;
-			else
-				result = triangle.sideThree;
+		if (triangle.area() > 0.0) {
+			if (triangle.getSideOne() > triangle.getSideTwo() && triangle.getSideOne() > triangle.getSideThree()) {
+				result = triangle.getSideOne();
+			} else if (triangle.getSideTwo() > triangle.getSideOne() && triangle.getSideTwo() > triangle.getSideThree()) {
+				result = triangle.getSideTwo();
+			} else {
+				result = triangle.getSideThree();
+			}
 		}
 		return result;
 	}
-
 }

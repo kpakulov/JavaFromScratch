@@ -1,24 +1,44 @@
 package ru.kpakulov.triangle;
 
-import static java.lang.Math.*;
+import static java.lang.Math.sqrt;
 
-
-// This class is a blueprint of a triangle which can be created using three points
-// In this example all class variables are public
+/**
+ * This class is a blueprint of a triangle which can be created using three points.
+ * In this example all class variables are public
+ */
 
 public class Triangle {
 
-    // a, b, and c are NOT variables, but _references_ to type Point _objects_
-    public Point a;
-    public Point b;
-    public Point c;
+    /**
+     * hahaha.
+     * a, b, and c are NOT variables, but _references_ to type Point _objects_
+     */
+    private Point a;
 
-    
-    // Three sides of a triangle - in this case these are _variables_, not references
-    
-    public double sideOne; 
-    public double sideTwo;
-    public double sideThree;
+    /**
+     * hahaha b.
+     */
+    private Point b;
+
+    /**
+     * hahaha c.
+     */
+    private Point c;
+
+    /**
+     * Three sides of a triangle - in this case these are _variables_, not references.
+     */
+    private double sideOne;
+
+    /**
+     * hahaha b.
+     */
+    private double sideTwo;
+
+    /**
+     * hahaha b.
+     */
+    private double sideThree;
 
     /**
      * Creating a new triangle using three points.
@@ -33,20 +53,44 @@ public class Triangle {
     }
 
     /**
-     * Calculating the area of the triangle
+     * hahaha One.
+     * @return sideOne
+     */
+    double getSideOne() {
+    return sideOne;
+    }
+
+    /**
+     * hahaha Two.
+     * @return sideTwo
+     */
+    double getSideTwo() {
+    return sideTwo;
+    }
+
+    /**
+     * hahaha Three.
+     * @return sideThree
+     */
+    double getSideThree() {
+    return sideThree;
+    }
+
+    /**
+     * Calculating the area of the triangle.
      * @return the area of the triangle
      */
     public double area() {
         double result = 0.0;
-        if(canExist()) {
+        if (canExist()) {
             double halfPerimeter = (sideOne + sideTwo + sideThree) / 2;
-            result = sqrt(halfPerimeter * (halfPerimeter - sideOne)* (halfPerimeter - sideTwo) * (halfPerimeter - sideThree));
+            result = sqrt(halfPerimeter * (halfPerimeter - sideOne) * (halfPerimeter - sideTwo) * (halfPerimeter - sideThree));
         }
         return result; //return ZERO for a non-existing triangle
     }
 
     /**
-     * A simple check of a possibility for a triangle to exist:
+     * A simple check of a possibility for a triangle to exist.
      * One of the sides must be bigger than the sum of two other sides.
      * @return true if the triangle is possible; false otherwise. sideOne-sideThree are calculated as well
      */
@@ -55,8 +99,8 @@ public class Triangle {
         sideOne = a.distanceTo(b);
         sideTwo = b.distanceTo(c);
         sideThree = c.distanceTo(a);
-        
-        if(sideOne + sideTwo > sideThree) {
+
+        if (sideOne + sideTwo > sideThree) {
             result = true;
         } else if (sideOne + sideThree > sideTwo) {
             result = true;
@@ -65,5 +109,4 @@ public class Triangle {
         }
         return result;
     }
-    
 }

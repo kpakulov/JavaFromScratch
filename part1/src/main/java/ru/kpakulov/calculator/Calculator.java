@@ -1,38 +1,40 @@
 package ru.kpakulov.calculator;
 
 /**
-* Calculator - a simple calculator class
+* Calculator - a simple calculator class.
 * @author Konstantin Pakulov
 * @version October 14, 2016
 */
 
 	public class Calculator {
+		/**
+		 * muahaha.
+		 */
 		private double result;
 
 	/**
-	* Adding two numbers
+	* Adding two numbers.
 	* @param first double
 	* @param second double
 	*/
 
-	public void add(double first, double second){
+	public void add(double first, double second) {
 		this.result = first + second;
 
 	}
 
-
-	/** 
-	* Subtracting two numbers
+	/**
+	* Subtracting two numbers.
 	* @param first double
 	* @param second double
 	*/
-        
+
 	public void substract(double first, double second) {
                this.result = first - second;
         }
 
 	/**
-	 * Multiplying two numbers
+	 * Multiplying two numbers.
 	 * @param first double
 	 * @param second double
 	 */
@@ -41,7 +43,7 @@ package ru.kpakulov.calculator;
         }
 
 	/**
-	 * Dividing two numbers
+	 * Dividing two numbers.
 	 * @param first double
 	 * @param second double
 	 */
@@ -50,7 +52,7 @@ package ru.kpakulov.calculator;
 	}
 
 	/**
-	 * Return the result
+	 * Return the result.
 	 * @return double
 	 */
         public double getResult() {
