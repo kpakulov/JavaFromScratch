@@ -58,12 +58,13 @@ public class LongestsideTest {
    * Deviation which is 0.01.
    */
   private final double constDevt = 0.01;
-	/**
+
+  /**
 	 * Mandatory javadoc.
 	 * @throws Exception something
 	 */
 	@Test
-	public void whenGiveMaxsideObjectCorrectTriangleShouldGetLengthOfMaxSideInTriangle() throws Exception {
+	public void whenGiveMaxsideObjectCorrectTriangleShouldGetLengthOfMaxSideInTriangleA() throws Exception {
 		//Creating the object and initializing variables
 		Triangle possibleTriangle = new Triangle(new Point(constOne, constTwo), new Point(constThree, constFour), new Point(constFive, constSix));
 		double expectedLength = constResult;
@@ -73,6 +74,22 @@ public class LongestsideTest {
 
 		assertThat(actualLength, closeTo(expectedLength, constDevt));
 	}
+
+/**
+   * Mandatory javadoc.
+   * @throws Exception something
+   */
+  @Test
+  public void whenGiveMaxsideObjectCorrectTriangleShouldGetLengthOfMaxSideInTriangleB() throws Exception {
+    //Creating the object and initializing variables
+    Triangle possibleTriangle = new Triangle(new Point(constOne, constTwo), new Point(constThree, constFour), new Point(constFive, constSix));
+    double expectedLength = constResult;
+    Longestside longestSide = new Longestside();
+
+    double actualLength = longestSide.max(possibleTriangle);
+
+    assertThat(actualLength, closeTo(expectedLength, constDevt));
+  }
 
 	/**
 	 * Mandatory javadoc.

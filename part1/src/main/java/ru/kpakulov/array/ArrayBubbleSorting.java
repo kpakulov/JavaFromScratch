@@ -39,23 +39,14 @@ package ru.kpakulov.array;
 	  *Sorting array uzing bubble algorithm.
 	  */
 	 public void sort() {
-		 for (int indexOut = 0; indexOut < this.values.length; indexOut++) {
-			 for (int indexIn = this.values.length - 1; indexIn > indexOut; indexIn--) {
-				 if (this.values[indexIn - 1] > this.values[indexIn]) {
-					 swap(indexIn - 1, indexIn);
+		 for (int indexOuter = this.values.length - 1; indexOuter >= 0; indexOuter--) {
+			 for (int indexInner = 0; indexInner < indexOuter; indexInner++) {
+				 if (this.values[indexInner] > this.values[indexInner + 1]) {
+				 	int temp = this.values[indexInner];
+				 	this.values[indexInner] = this.values[indexInner + 1];
+				 	this.values[indexInner + 1 ] = temp;
 				 }
 			 }
 		 }
 	 }
-
-	 /**
-	  * Swap elements of variable values.
-	  * @param indexFirst - index of first element
-	  * @param indexSecond - index of second element
-	  */
-	  private void swap(int indexFirst, int indexSecond) {
-		  int temp = this.values[indexFirst];
-		  this.values[indexFirst] = this.values[indexSecond];
-		  this.values[indexSecond] = temp;
-	  }
 }

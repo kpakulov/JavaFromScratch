@@ -18,10 +18,11 @@ public class Longestside {
 				result = triangle.getSideOne();
 			} else if (triangle.getSideTwo() > triangle.getSideOne() && triangle.getSideTwo() > triangle.getSideThree()) {
 				result = triangle.getSideTwo();
-			} else {
-				result = triangle.getSideThree();
+//			} else if (triangle.getSideOne == triangle.getSideTwo && triangle.getSideOne() == triangle.getSideThree()) {
+//				result = -1;
 			}
+			result = triangle.getSideThree();
 		}
-		return result;
+	return result;
 	}
 }
