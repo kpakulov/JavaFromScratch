@@ -1,30 +1,19 @@
-/**
-
-    //"переворачивание" массива
-    for i:=1 to N div 2 do begin
-      T:=A[i]; A[i]:=A[N-i+1]; A[N-i+1]:=T;
-    end;
-
-    //вывод
-    for i:=1 to N do writeln('A[',i,']=',A[i]);
-*/
-
 package ru.kpakulov.array;
 
 /**
- * A class for sorting an array using the bubble sorting algorithm.
- *@author Konstantin Pakulov
- *@version as of 12/27/2016
+ * A class for rotating an array.
+ * @author Konstantin Pakulov
+ * @version as of 12/27/2016
  */
 public class Turn {
 
 	 /**
-	  *The array for mirroring.
+	  * An array for rotating.
 	  */
 	 private int[] values;
 
 	 /**
-	  * The array for sorting.
+	  * An array for rotating.
 	  * @param values initializing array values
 	  */
 	 public Turn(int[] values) {
@@ -32,7 +21,7 @@ public class Turn {
 	 }
 
 	 /**
-	  * The array for rotating.
+	  * An array for rotating.
 	  * @return values previously set
 	  */
 	 public int[] getValues() {
@@ -40,7 +29,7 @@ public class Turn {
 	 }
 
 	/**
-	 * Mirroring an array.
+	 * Rotating the array.
 	 * Note: integer division is used for index
 	 */
 	 public void back() {
