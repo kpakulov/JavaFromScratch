@@ -52,7 +52,12 @@ public class LongestsideTest {
   /**
    * Mandatory javadoc.
    */
-  private final double constResult = 35.85;
+  private final double constResultA = 35.85;
+
+/**
+   * Mandatory javadoc.
+   */
+  private final double constResultB = 32.25;
 
   /**
    * Deviation which is 0.01.
@@ -67,14 +72,13 @@ public class LongestsideTest {
 	public void whenGiveMaxsideObjectCorrectTriangleShouldGetLengthOfMaxSideInTriangleA() throws Exception {
 		//Creating the object and initializing variables
 		Triangle possibleTriangle = new Triangle(new Point(constOne, constTwo), new Point(constThree, constFour), new Point(constFive, constSix));
-		double expectedLength = constResult;
+		double expectedLength = constResultA;
 		Longestside longestSide = new Longestside();
 
 		double actualLength = longestSide.max(possibleTriangle);
 
 		assertThat(actualLength, closeTo(expectedLength, constDevt));
 	}
-
 /**
    * Mandatory javadoc.
    * @throws Exception something
@@ -82,8 +86,8 @@ public class LongestsideTest {
   @Test
   public void whenGiveMaxsideObjectCorrectTriangleShouldGetLengthOfMaxSideInTriangleB() throws Exception {
     //Creating the object and initializing variables
-    Triangle possibleTriangle = new Triangle(new Point(constOne, constTwo), new Point(constThree, constFour), new Point(constFive, constSix));
-    double expectedLength = constResult;
+    Triangle possibleTriangle = new Triangle(new Point(constThree, constFour), new Point(constOne, constTwo), new Point(constFive, constSix));
+    double expectedLength = constResultB;
     Longestside longestSide = new Longestside();
 
     double actualLength = longestSide.max(possibleTriangle);

@@ -7,36 +7,36 @@ package ru.kpakulov.array;
  */
  public class ArrayBubbleSorting {
 	 /**
-	  *The array for sorting.
+	  *The array for bubble sorting.
 	  */
 	 private int[] values;
 
 	 /**
 	  * The array for sorting.
-	  * @param values pam pam
+	  * @param values initializing array values
 	  */
 	 public ArrayBubbleSorting(int[] values) {
 		 this.values = values;
 	 }
 
 	 /**
-	  *The array for sorting.
-	  * @return something
+	  * The array for sorting.
+	  * @return values previously set
 	  */
 	 public int[] getValues() {
 		 return this.values;
 	 }
 
 	 /**
-	  *The array for sorting.
-	  * @param values pam pam
+	  * Variable setter, just in case.
+	  * @param values setting internal values
 	  */
 	 public void setValues(int[] values) {
 		 this.values = values;
 	 }
 
 	 /**
-	  *Sorting array uzing bubble algorithm.
+	  *Sorting an array using the bubble algorithm.
 	  */
 	 public void sort() {
 		 for (int indexOuter = this.values.length - 1; indexOuter >= 0; indexOuter--) {

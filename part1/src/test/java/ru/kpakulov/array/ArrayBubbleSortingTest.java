@@ -67,7 +67,7 @@ public class ArrayBubbleSortingTest {
      *
      */
 	@Test
-	public void whenSort() {
+	public void whenSortingPredefinedArrayGetSortedElements() {
 		final int[] values = {aeOne, aeTwo, aeThree, aeFour, aeFive, aeSix, aeSeven};
         	final ArrayBubbleSorting arrayBubble = new ArrayBubbleSorting(values);
         	int[] checked = {aeSeven, aeTwo, aeFive, aeFour, aeSix, aeOne, aeThree};
@@ -76,19 +76,4 @@ public class ArrayBubbleSortingTest {
         	final int[] result = arrayBubble.getValues();
         	assertThat(result, is(checked));
 	}
-
-    /**
-     * Mandatory javadoc.
-     *
-     */
-//	@Test
-//	public void whenSwap() {
-//		final int[] values = {aeOne, aeTwo};
-//		final ArrayBubbleSorting arrayBubbleSwap = new ArrayBubbleSorting(values);
-//		arrayBubbleSwap.swap(indexFirst, indexSecond);
-//		int[] checkedSwap = {aeTwo, aeOne};
-//		assertThat(result, is(checkedSwap));
-//	}
-
-
 }
